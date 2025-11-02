@@ -16,15 +16,14 @@ The [Titanic data set](data/titanic.csv) encourages to discover the relation bet
     - The tests listed below helped a lot in verifying the influence of different variables on the survival rate:
         - Two-Proportion z-Test
         - Chi-Square Test of Independence
-        - Welch's t-Test 
-        - The tests listed above helped a lot in verifying the influence of different variables on the survival rate.
+        - Welch's t-Test
 4. **Building Prediction Model**
     - Tree Models
     - *K*-Nearest Neighbors
     - Logistic Regression
     - Random Forest Classifiers
 5. **Cross-Validation**
-    - I used cross-validation to evaluate models' performance. As well, I've used the following metrics instead of accuracy:
+    - I used cross-validation to evaluate models' performance. I've used the following metrics instead of accuracy:
         - F1 Score
         - Precision
         - Recall
@@ -32,7 +31,7 @@ The [Titanic data set](data/titanic.csv) encourages to discover the relation bet
 6. **Bootstrap Confidence Interval**
     - I built confidence intervals for models' prediction performance using bootstrap resampling on the test set.  
 
-:syringe: However, the so-called *machine learning* part of this tutorial is not complete and it makes sense to go further as the performance can be improved using ensemble models, stacking, and feature engineering.
+:syringe: However, the so-called *machine learning* part of this tutorial is not complete and it makes sense to go further as the performance can be improved using **ensemble models**, **stacking**, and **feature engineering**.
 
 ## :game_die: Who Survived?
 In short, I would highlight the next factors that influenced survival the most. It may be tempting to say that being a `Female` or being a `Child` was a gamechanger. However, the `Fare` that a passenger paid for the ticket *(which is the marker of the passenger's social class)* has made a huge difference. For example, a *3-class female* had almost the same chances to survive as a *1-class male*. The `RandomForestClassifier` *(which is one of the most powerful classifiers)* suggests the following rank of survival-influence features *(top 5)*:
@@ -40,7 +39,7 @@ In short, I would highlight the next factors that influenced survival the most. 
 2. `Age` *(being a child might help a lot the passenger to survive)*
 3. `Female`
 4. `Male`
-5. `3-Class Passengers` *e.g., 3-class females had pretty fair chances (50%) to survive while higher-class females were **likely** (~90%) to survive*
+5. `3-Class Passengers` *(e.g., 3-class females had pretty fair chances (50%) to survive, while higher-class females were **likely** (~90%) to survive)*
 
 ## :hammer_and_wrench: Libraries Used
 - `pandas`
