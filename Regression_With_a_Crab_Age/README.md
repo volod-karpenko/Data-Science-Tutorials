@@ -27,8 +27,8 @@ I have tried different models, using `GridSearchCV` and `RandomizedSearchCV` to 
 - `Ridge`
 - `GradientBoostingRegressor`
 - `RandomForestRegressor` 
- 
-On top of those models, I've used `StackingRegressor`, however it has not improved the **MAE** much: it minimized it from ~$1.41$ *(best individual model score)* to $1.40$.
+
+On top of those models, I've used `StackingRegressor`, however it has not improved the **MAE** much: it minimized it from about $1.41$ *(best individual model score)* to $1.40$.
 
 As for the data transformations, I've done standard scaling and one-hot encoding. I have skipped **feature engineering**, but I guess it may help, e.g. calculating **body mass index** or some other (?).
 
