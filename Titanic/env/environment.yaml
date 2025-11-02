@@ -1,0 +1,11 @@
+name: ds
+channels:
+  - defaults
+dependencies:
+  - ipykernel
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - numpy
+  - seaborn
